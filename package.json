@@ -1,4 +1,5 @@
 {
+  "scripts": {},
   "devDependencies": {
     "elm": "^0.17.1"
   }
