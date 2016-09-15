@@ -1,12 +1,12 @@
 {
-  "name": "elm-is-fun",
-  "description": "An elm pilot test by myself.",
-  "repository": "https://github.com/luckynum7/elm-is-fun.git",
-  "license": "MIT",
-  "scripts": {
-    "postinstall": "elm-package install"
-  },
-  "devDependencies": {
-    "elm": "^0.17.1"
-  }
+    "name": "elm-is-fun",
+    "description": "An elm pilot test by myself.",
+    "repository": "https://github.com/luckynum7/elm-is-fun.git",
+    "license": "MIT",
+    "scripts": {
+        "postinstall": "elm-package install"
+    },
+    "devDependencies": {
+        "elm": "^0.17.1"
+    }
 }
