@@ -1,4 +1,8 @@
 {
+  "name": "elm-is-fun",
+  "description": "An elm pilot test by myself.",
+  "repository": "https://github.com/luckynum7/elm-is-fun.git",
+  "license": "MIT",
   "scripts": {
     "postinstall": "elm-package install"
   },
