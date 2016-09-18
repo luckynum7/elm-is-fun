@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "elm-package install",
-    "build:markup": "pug src/index.pug -o docs/"
+    "build:markup": "pug src -o docs"
   },
   "devDependencies": {
     "elm": "^0.17.1",
