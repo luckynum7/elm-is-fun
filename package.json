@@ -10,19 +10,23 @@
         "prebuild:style": "node -e \"var d='docs/css',fs=require('fs-extra');fs.ensureDir(d,function(e){});\"",
         "build:style": "stylus src/assets/stylus/main.styl -c -o docs/css",
         "build:markup": "pug src -o docs",
-        "build": "npm-run-all clean --parallel build:script build:style build:markup",
-        "watch:script": "npm run build:script -- --watch",
+        "build": "npm-run-all clean --parallel build:*",
         "watch:style": "npm run build:style -- -w",
         "watch:markup": "npm run build:markup -- -w",
-        "watch": "run-p watch:js watch:styles watch:markup"
+        "watch": "run-p watch:*",
+        "open:dev": "opener http://localhost:8080/webpack-dev-server/",
+        "serve": "webpack-dev-server --content-base docs/",
+        "dev": "npm-run-all clean --parallel watch serve open:dev"
     },
     "devDependencies": {
         "elm": "^0.17.1",
         "elm-webpack-loader": "^3.0.6",
         "fs-extra": "^0.30.0",
         "npm-run-all": "^3.1.0",
+        "opener": "^1.4.2",
         "pug-cli": "^1.0.0-alpha6",
         "stylus": "^0.54.5",
-        "webpack": "^1.13.2"
+        "webpack": "^1.13.2",
+        "webpack-dev-server": "^1.16.0"
     }
 }

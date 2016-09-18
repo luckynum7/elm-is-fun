@@ -4,6 +4,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: "./docs/js",
+        publicPath: "/js/",
         filename: "bundle.js"
     },
     resolve: {
