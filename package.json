@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "elm-package install",
+    "build:script": "elm-make src/elm/Main.elm --output=docs/js/main.js",
     "build:markup": "pug src -o docs"
   },
   "devDependencies": {
