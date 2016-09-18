@@ -1,15 +1,22 @@
 {
-  "name": "elm-is-fun",
-  "description": "An elm pilot test by myself.",
-  "repository": "https://github.com/luckynum7/elm-is-fun.git",
-  "license": "MIT",
-  "scripts": {
-    "postinstall": "elm-package install",
-    "build:script": "elm-make src/elm/Main.elm --output=docs/js/main.js",
-    "build:markup": "pug src -o docs"
-  },
-  "devDependencies": {
-    "elm": "^0.17.1",
-    "pug-cli": "^1.0.0-alpha6"
-  }
+    "name": "elm-is-fun",
+    "description": "An elm pilot test by myself.",
+    "repository": "https://github.com/luckynum7/elm-is-fun.git",
+    "license": "MIT",
+    "scripts": {
+        "postinstall": "elm-package install",
+        "clean": "node -e \"var d='docs',fs=require('fs-extra');fs.emptydir(d,function(e){});\"",
+        "build:script": "elm-make src/elm/Main.elm --output=docs/js/main.js",
+        "prebuild:style": "node -e \"var d='docs/css',fs=require('fs-extra');fs.ensureDir(d,function(e){});\"",
+        "build:style": "stylus src/assets/stylus/main.styl -c -o docs/css",
+        "build:markup": "pug src -o docs",
+        "build": "npm-run-all clean --parallel build:script build:style build:markup"
+    },
+    "devDependencies": {
+        "elm": "^0.17.1",
+        "fs-extra": "^0.30.0",
+        "npm-run-all": "^3.1.0",
+        "pug-cli": "^1.0.0-alpha6",
+        "stylus": "^0.54.5"
+    }
 }
