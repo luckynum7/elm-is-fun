@@ -6,3 +6,4 @@ An elm pilot test by myself.
 
 1. install nodejs dependencies `npm i`
 2. install elm packages (already done in step 1)
+3. `npm run build` to build
