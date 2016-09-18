@@ -10,7 +10,11 @@
         "prebuild:style": "node -e \"var d='docs/css',fs=require('fs-extra');fs.ensureDir(d,function(e){});\"",
         "build:style": "stylus src/assets/stylus/main.styl -c -o docs/css",
         "build:markup": "pug src -o docs",
-        "build": "npm-run-all clean --parallel build:script build:style build:markup"
+        "build": "npm-run-all clean --parallel build:script build:style build:markup",
+        "watch:script": "npm run build:script -- --watch",
+        "watch:style": "npm run build:style -- -w",
+        "watch:markup": "npm run build:markup -- -w",
+        "watch": "run-p watch:js watch:styles watch:markup"
     },
     "devDependencies": {
         "elm": "^0.17.1",
