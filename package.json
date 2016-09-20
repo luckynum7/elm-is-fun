@@ -5,20 +5,18 @@
     "license": "MIT",
     "config": {
         "ghooks": {
-            "pre-commit": "npm run build && git add ."
+            "pre-commit": "echo commit..."
         }
     },
     "scripts": {
         "postinstall": "elm-package install",
         "clean": "node -e \"var d='docs',fs=require('fs-extra');fs.emptydir(d,function(e){});\"",
-        "build:script": "webpack -p",
+        "pack": "webpack -p",
         "prebuild:style": "node -e \"var d='docs/css',fs=require('fs-extra');fs.ensureDir(d,function(e){});\"",
         "build:style": "stylus src/assets/stylus/main.styl -c -o docs/css",
         "build:markup": "pug src -o docs",
-        "build": "npm-run-all clean --parallel build:*",
-        "watch:style": "npm run build:style -- -w",
-        "watch:markup": "npm run build:markup -- -w",
-        "watch": "run-p watch:*",
+        "build": "npm-run-all clean --parallel pack build:*",
+        "watch": "run-p \"build:* -- -w\"",
         "open:prod": "opener https://luckynum7.github.io/elm-is-fun/",
         "open:dev": "opener http://localhost:8080/webpack-dev-server/",
         "serve": "webpack-dev-server --content-base docs/",
