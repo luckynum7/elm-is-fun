@@ -10,16 +10,18 @@
     },
     "scripts": {
         "postinstall": "elm-package install",
-        "clean": "node -e \"var d='docs',fs=require('fs-extra');fs.emptydir(d,function(e){});\"",
+        "clean": "node -e \"var d='_build',fs=require('fs-extra');fs.emptydir(d);\"",
         "pack": "webpack -p",
-        "prebuild:style": "node -e \"var d='docs/css',fs=require('fs-extra');fs.ensureDir(d,function(e){});\"",
-        "build:style": "stylus src/assets/stylus/main.styl -c -o docs/css",
-        "build:markup": "pug src -o docs",
+        "prebuild:style": "node -e \"var d='_build/css',fs=require('fs-extra');fs.ensureDir(d);\"",
+        "build:style": "stylus src/assets/stylus/main.styl -c -o _build/css",
+        "build:markup": "pug src -o _build",
         "build": "npm-run-all clean --parallel pack build:*",
         "watch": "run-p \"build:* -- -w\"",
+        "predeploy": "node -e \"var d='docs',fs=require('fs-extra');fs.emptydir(d);\"",
+        "deploy": "node -e \"var s='_build',d='docs',fs=require('fs-extra');fs.copy(s,d);\"",
         "open:prod": "opener https://luckynum7.github.io/elm-is-fun/",
         "open:dev": "opener http://localhost:8080/webpack-dev-server/",
-        "serve": "webpack-dev-server --content-base docs/",
+        "serve": "webpack-dev-server --content-base _build/",
         "dev": "npm-run-all clean --parallel serve watch open:dev"
     },
     "devDependencies": {
