@@ -4,6 +4,7 @@ import Html exposing (Html, div)
 import Navigation exposing (Location)
 import RouteUrl exposing (HistoryEntry(..), UrlChange)
 import RouteUrl.Builder as Builder exposing (Builder)
+import Pages.Welcome.View
 
 
 -- MODEL
@@ -59,7 +60,14 @@ subscriptions model =
 
 view : Model -> Html Msg
 view model =
-    div [] []
+    div [] [ viewMainContent model ]
+
+
+viewMainContent : Model -> Html Msg
+viewMainContent model =
+    case model.activePage of
+        Welcome ->
+            Pages.Welcome.View.view
 
 
 
