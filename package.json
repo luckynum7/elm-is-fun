@@ -5,7 +5,8 @@
     "license": "MIT",
     "config": {
         "ghooks": {
-            "pre-commit": "echo commit..."
+            "pre-commit": "echo commit...",
+            "pre-push": "echo https://luckynum7.github.io/elm-is-fun/"
         }
     },
     "scripts": {
