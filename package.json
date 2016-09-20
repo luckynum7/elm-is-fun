@@ -6,7 +6,7 @@
     "config": {
         "ghooks": {
             "pre-commit": "npm run build && git add .",
-            "pre-push": "echo pushing"
+            "pre-push": "open:prod"
         }
     },
     "scripts": {
