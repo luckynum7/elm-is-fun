@@ -5,7 +5,7 @@
     "license": "MIT",
     "config": {
         "ghooks": {
-            "pre-commit": "echo commiting",
+            "pre-commit": "npm run build && git add .",
             "pre-push": "echo pushing"
         }
     },
