@@ -20,6 +20,7 @@
         "watch:style": "npm run build:style -- -w",
         "watch:markup": "npm run build:markup -- -w",
         "watch": "run-p watch:*",
+        "open:prod": "opener https://luckynum7.github.io/elm-is-fun/",
         "open:dev": "opener http://localhost:8080/webpack-dev-server/",
         "serve": "webpack-dev-server --content-base docs/",
         "dev": "npm-run-all clean open:dev --parallel watch serve"
