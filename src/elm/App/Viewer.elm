@@ -1,6 +1,6 @@
 module App.Viewer exposing (..)
 
-import RouteUrl exposing (UrlChange)
+import Html exposing (Html, div)
 
 
 -- MODEL
@@ -38,9 +38,14 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         SetActivePage page ->
-            { model | activePage = setActivePageAccess page } ! []
+            { model | activePage = page } ! []
 
 
 
 -- SUBSCRIPTIONS
 -- VIEW
+
+
+view : Model -> Html Msg
+view model =
+    div [] []
