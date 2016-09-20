@@ -43,9 +43,21 @@ update msg model =
 
 
 -- SUBSCRIPTIONS
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Sub.none
+
+
+
 -- VIEW
 
 
 view : Model -> Html Msg
 view model =
     div [] []
+
+
+
+-- ROUTING
