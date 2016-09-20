@@ -14,8 +14,3 @@ main =
         , view = Viewer.view
         , subscriptions = Viewer.subscriptions
         }
-
-
-
--- import Html exposing (text)
--- main = text "Hello World!"
