@@ -8,7 +8,7 @@ main : Program Never
 main =
     RouteUrl.program
         { delta2url = Viewer.delta2url
-        , location2messages = Viewer.url2messages
+        , location2messages = Viewer.hash2messages
         , init = Viewer.init
         , update = Viewer.update
         , view = Viewer.view
