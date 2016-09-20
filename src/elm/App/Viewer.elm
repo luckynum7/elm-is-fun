@@ -23,7 +23,7 @@ emptyModel =
 
 init : ( Model, Cmd Msg )
 init =
-    ( emptyModel, Cmd.none )
+    emptyModel ! []
 
 
 
@@ -32,6 +32,13 @@ init =
 
 type Msg
     = SetActivePage Page
+
+
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        SetActivePage page ->
+            { model | activePage = setActivePageAccess page } ! []
 
 
 
