@@ -8,3 +8,14 @@ import RouteUrl exposing (UrlChange)
 
 type Page
     = Welcome
+
+
+type alias Model =
+    { activePage : Page
+    }
+
+
+emptyModel : Model
+emptyModel =
+    { activePage = Welcome
+    }
