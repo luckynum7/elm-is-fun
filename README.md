@@ -10,8 +10,7 @@ An elm pilot test by myself.
 ## Usage
 
 1. Serve locally, and watch file changes: `npm run dev`
-2. Prepare file for publishing `npm run build`
-3. Deploy to GitHub's pages (docs folder of your repository): `npm run deploy`
+2. Deploy to GitHub's pages (docs folder of your repository): `npm run deploy`
 
 ## Test
 
