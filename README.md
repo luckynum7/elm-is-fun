@@ -26,6 +26,11 @@ An elm pilot test by myself.
 1. elm-route-url: <https://github.com/rgrempel/elm-route-url>
 2. [Faithful Elm and the Amazing Router](http://www.gizra.com/content/faithful-elm-amazing-router/): <https://github.com/Gizra/elm-spa-example>
 
+### Test
+
+1. <https://github.com/elm-community/elm-test>
+2. <https://github.com/rtfeldman/elm-css/tree/master/tests>
+
 ### Architecture
 
 1. [Architecture in Elm](https://gist.github.com/evancz/2b2ba366cae1887fe621)
