@@ -8,6 +8,14 @@ import String
 
 all : Test
 all =
+    describe "elm-is-fun"
+        [ example1
+        , example2
+        ]
+
+
+example1 : Test
+example1 =
     describe "A Test Suite"
         [ test "Addition" <|
             \() ->
@@ -21,8 +29,8 @@ all =
         ]
 
 
-suite : Test
-suite =
+example2 : Test
+example2 =
     describe "The String module"
         [ describe "String.reverse"
             -- Nest as many descriptions as you like.
