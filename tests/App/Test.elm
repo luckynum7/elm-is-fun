@@ -19,6 +19,9 @@ setActivePage =
         [ test "set Welcome active page" <|
             \() ->
                 Expect.equal Welcome (getPageAsAnonymous Welcome)
+        , test "set 404 active page" <|
+            \() ->
+                Expect.equal PageNotFound (getPageAsAnonymous PageNotFound)
         ]
 
 
