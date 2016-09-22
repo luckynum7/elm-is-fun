@@ -4,6 +4,7 @@ import Html exposing (Html, div)
 import App.Model exposing (Page(..), Model)
 import App.Update exposing (Msg(..))
 import Pages.Welcome.View
+import Pages.PageNotFound.View
 
 
 view : Model -> Html Msg
@@ -16,3 +17,6 @@ viewMainContent model =
     case model.activePage of
         Welcome ->
             Pages.Welcome.View.view
+
+        PageNotFound ->
+            Pages.PageNotFound.View.view

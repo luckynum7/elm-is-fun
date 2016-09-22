@@ -13,12 +13,21 @@ delta2url previous current =
         Welcome ->
             Just <| UrlChange NewEntry "/#welcome"
 
+        PageNotFound ->
+            Just <| UrlChange NewEntry "/#404"
+
 
 hash2messages : Location -> List Msg
 hash2messages location =
     case location.hash of
+        "" ->
+            []
+
         "/#welcome" ->
             [ SetActivePage Welcome ]
 
+        "/#404" ->
+            [ SetActivePage PageNotFound ]
+
         _ ->
-            [ SetActivePage Welcome ]
+            [ SetActivePage PageNotFound ]
