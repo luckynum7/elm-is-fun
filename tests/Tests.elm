@@ -1,9 +1,10 @@
-module Tests exposing (..)
+module Tests exposing (all)
 
 import Expect
 import Fuzz exposing (..)
 import Test exposing (..)
 import String
+import App.Test exposing (all)
 
 
 all : Test
@@ -11,6 +12,7 @@ all =
     describe "elm-is-fun"
         [ example1
         , example2
+        , App.Test.all
         ]
 
 
@@ -23,9 +25,9 @@ example1 =
         , test "String.left" <|
             \() ->
                 Expect.equal "a" (String.left 1 "abcdefg")
-        , test "This test should fail" <|
-            \() ->
-                Expect.fail "failed as expected!"
+          -- , test "This test should fail" <|
+          --     \() ->
+          --         Expect.fail "failed as expected!"
         ]
 
 
