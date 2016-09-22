@@ -5,8 +5,8 @@
     "license": "MIT",
     "config": {
         "ghooks": {
-            "pre-commit": "npm test",
-            "pre-push": "echo https://luckynum7.github.io/elm-is-fun/"
+            "pre-commit": "echo commiting",
+            "pre-push": "npm test && echo https://luckynum7.github.io/elm-is-fun/"
         }
     },
     "scripts": {
