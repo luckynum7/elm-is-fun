@@ -23,10 +23,10 @@ hash2messages location =
         "" ->
             []
 
-        "/#welcome" ->
+        "#welcome" ->
             [ SetActivePage Welcome ]
 
-        "/#404" ->
+        "#404" ->
             [ SetActivePage PageNotFound ]
 
         _ ->
