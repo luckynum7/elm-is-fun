@@ -13,6 +13,10 @@ An elm pilot test by myself.
 2. Prepare file for publishing `npm run build`
 3. Deploy to GitHub's pages (docs folder of your repository): `npm run deploy`
 
+## Test
+
+1. Run tests: `npm test`
+
 ## Reference
 
 [Awesome Elm](https://github.com/isRuslan/awesome-elm)
