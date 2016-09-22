@@ -9,4 +9,4 @@ import Html exposing (div, text, Html)
 view : Html a
 view =
     div []
-        [ text "Welcome!" ]
+        [ text "Welcome TEA!" ]

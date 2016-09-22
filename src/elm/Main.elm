@@ -1,16 +1,18 @@
 module Main exposing (..)
 
-import App.Viewer as Viewer
 import RouteUrl
+import App.Update exposing (init, update, subscriptions)
+import App.View exposing (view)
+import App.Router exposing (delta2url, hash2messages)
 
 
 main : Program Never
 main =
     RouteUrl.program
-        { delta2url = Viewer.delta2url
-        , location2messages = Viewer.hash2messages
-        , init = Viewer.init
-        , update = Viewer.update
-        , view = Viewer.view
-        , subscriptions = Viewer.subscriptions
+        { delta2url = delta2url
+        , location2messages = hash2messages
+        , init = init
+        , update = update
+        , view = view
+        , subscriptions = subscriptions
         }
