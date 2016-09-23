@@ -10,7 +10,7 @@
         }
     },
     "scripts": {
-        "postinstall": "elm-package install",
+        "postinstall": "elm-package install -y",
         "test": "elm-test",
         "clean": "node -e \"var d='_build',fs=require('fs-extra');fs.emptydir(d);\"",
         "build-js": "webpack -p",
