@@ -16,9 +16,18 @@ An elm pilot test by myself.
 
 1. Run tests: `npm test`
 
+## Todos
+
+- [ ] try RouteUrl.Builder
+
 ## Reference
 
 [Awesome Elm](https://github.com/isRuslan/awesome-elm)
+
+### UI
+
+1. Material Design Components for Elm: <https://github.com/debois/elm-mdl>
+2. Elm Native UI: <https://github.com/elm-native-ui/elm-native-ui>
 
 ### Router
 
@@ -28,7 +37,7 @@ An elm pilot test by myself.
 ### Test
 
 1. <https://github.com/elm-community/elm-test>
-2. <https://github.com/rtfeldman/elm-css/tree/master/tests>
+2. example: <https://github.com/rtfeldman/elm-css/tree/master/tests>
 
 ### Architecture
 
