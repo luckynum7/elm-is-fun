@@ -4,7 +4,7 @@ An elm pilot test by myself.
 
 ## Installation
 
-1. Install nodejs dependencies `npm i`
+1. Install nodejs dependencies `npm install`
 2. Install elm packages (already done in step 1 `elm-package install`)
 
 ## Usage
@@ -22,12 +22,20 @@ An elm pilot test by myself.
 
 ## Reference
 
+(✔ means what I used in the project, not a recommendation.)
+
 [Awesome Elm](https://github.com/isRuslan/awesome-elm)
 
 ### UI
 
-1. Material Design Components for Elm: <https://github.com/debois/elm-mdl>
+1. Material Design Components for Elm: <https://github.com/debois/elm-mdl> ✔
 2. Elm Native UI: <https://github.com/elm-native-ui/elm-native-ui>
+
+### Style
+
+1. <https://github.com/elm-lang/html/>
+2. <https://github.com/rtfeldman/elm-css> ✔
+3. <https://github.com/adam-r-kowalski/elm-style>
 
 ### Router
 
