@@ -15,7 +15,7 @@
         "clean": "node -e \"var d='_build',fs=require('fs-extra');fs.emptydir(d);\"",
         "build-js": "webpack -p",
         "prebuild:style": "node -e \"var d='_build/css',fs=require('fs-extra');fs.ensureDir(d);\"",
-        "build:style": "stylus src/assets/stylus/main.styl -c -o _build/css",
+        "build:style": "echo stylus src/assets/stylus/main.styl -c -o _build/css",
         "build:markup": "pug src -o _build",
         "build": "npm-run-all clean --parallel build-js build:*",
         "watch:build": "run-p \"build:* -- -w\"",
