@@ -11,10 +11,7 @@ An elm pilot test by myself.
 
 1. Serve locally, and watch file changes: `npm run dev`
 2. Deploy to GitHub's pages (docs folder of your repository): `npm run deploy`
-
-## Test
-
-1. Run tests: `npm test`
+3. Run tests: `npm test`
 
 ## Todos
 
@@ -25,6 +22,14 @@ An elm pilot test by myself.
 (✔ means what I used in the project, not a recommendation.)
 
 [Awesome Elm](https://github.com/isRuslan/awesome-elm)
+
+### Editor plugins
+
+#### Atom editor
+
+1. <https://atom.io/packages/language-elm>
+2. <https://atom.io/packages/elmjutsu>
+3. <https://atom.io/packages/linter-elm-make>
 
 ### UI
 
