@@ -15,7 +15,9 @@ An elm pilot test by myself.
 
 ## Todos
 
-- [ ] try RouteUrl.Builder
+- [ ] try elm-mdl
+- [ ] try elm-css
+- [ ] try RouteUrl.Builder (elm-route-url)
 
 ## Reference
 
