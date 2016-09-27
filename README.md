@@ -58,3 +58,9 @@ An elm pilot test by myself.
 2. [Structured TodoMVC example with Elm](https://medium.com/@_rchaves_/structured-todomvc-example-with-elm-a68d87cd38da)
 3. [How I Structure Elm Apps](http://blog.jenkster.com/2016/04/how-i-structure-elm-apps.html)
 4. [Composing Features and Behaviours in the Elm Architecture](https://github.com/foxdonut/adventures-reactive-web-dev/tree/master/client-elm)
+
+### PureScript
+
+1. <http://www.lambdacat.com/getting-to-know-purescript-from-elm/>
+2. <http://www.purescript.org/>
+3. <https://github.com/xgrommx/purescript-ecosystem>
