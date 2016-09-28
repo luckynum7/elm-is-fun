@@ -25,6 +25,11 @@ An elm pilot test by myself.
 
 [Awesome Elm](https://github.com/isRuslan/awesome-elm)
 
+### Articles
+
+1. [evancz/an-introduction-to-elm](https://guide.elm-lang.org/)
+2. [sporto/elm-tutorial](https://www.elm-tutorial.org/en/)
+
 ### Editor plugins
 
 #### Atom editor
