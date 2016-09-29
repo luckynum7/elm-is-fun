@@ -1,6 +1,6 @@
 # elm-is-fun
 
-An elm pilot test by myself.
+An elm single page application prototype.
 
 ## Installation
 
@@ -23,7 +23,7 @@ An elm pilot test by myself.
 
 (✔ means what I used in the project, not a recommendation.)
 
-[Awesome Elm](https://github.com/isRuslan/awesome-elm)
+[Awesome Elm](https://github.com/isRuslan/awesome-elm) [elm-ecosystem](https://github.com/xgrommx/elm-ecosystem)
 
 ### Articles
 
