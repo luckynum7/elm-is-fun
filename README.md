@@ -23,7 +23,8 @@ An elm single page application prototype.
 
 (✔ means what I used in the project, not a recommendation.)
 
-[Awesome Elm](https://github.com/isRuslan/awesome-elm) [elm-ecosystem](https://github.com/xgrommx/elm-ecosystem)
+1. [Awesome Elm](https://github.com/isRuslan/awesome-elm)
+2. [elm-ecosystem](https://github.com/xgrommx/elm-ecosystem)
 
 ### Articles
 
