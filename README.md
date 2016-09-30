@@ -72,3 +72,18 @@ An elm single page application prototype.
 1. <http://www.lambdacat.com/getting-to-know-purescript-from-elm/>
 2. <http://www.purescript.org/>
 3. <https://github.com/xgrommx/purescript-ecosystem>
+
+### To use multiple git service
+
+```bash
+git remote set-url --add origin url1
+git remote set-url --add origin url2
+git remote set-url --add origin url3
+git remote set-url --add origin url4
+```
+
+[ref](https://www.reddit.com/r/programming/comments/44hque/github_is_undergoing_a_fullblown_overhaul_as/czqy5fj)
+
+1. `git pull` use 1st origin url
+2. `git push` will push to 4 origin urls
+3. `pre-push` with be triggered 4 times
