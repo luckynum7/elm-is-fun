@@ -39,6 +39,6 @@
         "pug-cli": "^1.0.0-alpha6",
         "stylus": "^0.54.5",
         "webpack": "^1.13.2",
-        "webpack-dev-server": "^1.16.0"
+        "webpack-dev-server": "^1.16.1"
     }
 }
