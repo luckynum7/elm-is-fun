@@ -1,6 +1,6 @@
 # elm-is-fun
 
-An elm single page application prototype.
+An elm single page application prototype. <https://github.com/luckynum7/elm-is-fun>
 
 ## Installation
 
