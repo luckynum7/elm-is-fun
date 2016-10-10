@@ -5,7 +5,6 @@ An elm single page application prototype. <https://github.com/luckynum7/elm-is-f
 ## Installation
 
 1. Install nodejs dependencies `npm install`
-2. Install elm packages (already done in step 1 `elm-package install`)
 
 ## Usage
 

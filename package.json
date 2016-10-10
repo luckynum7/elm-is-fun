@@ -10,14 +10,16 @@
         }
     },
     "scripts": {
-        "postinstall": "elm-package install -y",
         "test": "elm-test",
-        "clean": "node -e \"var d='_build',fs=require('fs-extra');fs.emptydir(d);\"",
+        "clean:src": "node -e \"var d='elm-stuff',fs=require('fs-extra');fs.emptydir(d);\"",
+        "clean:test": "node -e \"var d='tests/elm-stuff',fs=require('fs-extra');fs.emptydir(d);\"",
+        "clean:build": "node -e \"var d='_build',fs=require('fs-extra');fs.emptydir(d);\"",
+        "clean": "run-p clean:*",
         "build-js": "webpack -p",
         "prebuild:style": "node -e \"var d='_build/css',fs=require('fs-extra');fs.ensureDir(d);\"",
         "build:style": "echo stylus src/assets/stylus/main.styl -c -o _build/css",
         "build:markup": "pug src -o _build",
-        "build": "npm-run-all clean --parallel build-js build:*",
+        "build": "npm-run-all clean:build --parallel build-js build:*",
         "watch:build": "run-p \"build:* -- -w\"",
         "watch:test": "elm-test -w",
         "watch": "run-p watch:*",
@@ -26,7 +28,7 @@
         "open:prod": "opener https://luckynum7.github.io/elm-is-fun/",
         "open:dev": "opener http://localhost:8080/webpack-dev-server/",
         "serve": "webpack-dev-server --content-base _build/",
-        "dev": "npm-run-all clean --parallel serve watch open:dev"
+        "dev": "npm-run-all clean:build --parallel serve watch open:dev"
     },
     "devDependencies": {
         "elm": "^0.17.1",
