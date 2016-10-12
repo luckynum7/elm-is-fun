@@ -20,6 +20,8 @@ An elm single page application prototype. <https://github.com/luckynum7/elm-is-f
 
 ## Reference
 
+[Try Elm](http://elm-lang.org/try) online.
+
 (✔ means what I used in the project, not a recommendation.)
 
 1. [Awesome Elm](https://github.com/isRuslan/awesome-elm)
@@ -74,14 +76,14 @@ An elm single page application prototype. <https://github.com/luckynum7/elm-is-f
 
 ### To use multiple git service
 
+ref: <https://www.reddit.com/r/programming/comments/44hque/github_is_undergoing_a_fullblown_overhaul_as/czqy5fj>
+
 ```bash
 git remote set-url --add origin url1
 git remote set-url --add origin url2
 git remote set-url --add origin url3
 git remote set-url --add origin url4
 ```
-
-[ref](https://www.reddit.com/r/programming/comments/44hque/github_is_undergoing_a_fullblown_overhaul_as/czqy5fj)
 
 1. `git pull` use 1st origin url
 2. `git push` will push to 4 origin urls
