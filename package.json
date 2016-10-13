@@ -1,6 +1,8 @@
 {
     "scripts": {
-        "start": "elm-reactor",
+        "start": "run-p serve openr",
+        "serve": "elm-reactor",
+        "openr": "opener http://localhost:8000/src/",
         "clean:src": "node -e \"var d='elm-stuff',fs=require('fs-extra');fs.emptydir(d);\"",
         "clean:test": "node -e \"var d='tests/elm-stuff',fs=require('fs-extra');fs.emptydir(d);\"",
         "clean:build": "node -e \"var d='_build',fs=require('fs-extra');fs.emptydir(d);\"",
@@ -8,6 +10,8 @@
     },
     "devDependencies": {
         "elm": "^0.17.1",
-        "fs-extra": "^0.30.0"
+        "fs-extra": "^0.30.0",
+        "npm-run-all": "^3.1.0",
+        "opener": "^1.4.2"
     }
 }
