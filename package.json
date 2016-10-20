@@ -31,7 +31,6 @@
         "dev": "npm-run-all clean:build --parallel serve watch open:dev"
     },
     "devDependencies": {
-        "elm": "^0.17.1",
         "elm-test": "^0.17.3",
         "elm-webpack-loader": "^3.0.6",
         "fs-extra": "^0.30.0",
