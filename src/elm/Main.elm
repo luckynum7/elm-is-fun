@@ -1,12 +1,13 @@
 module Main exposing (..)
 
-import RouteUrl
-import App.Update exposing (init, update, subscriptions)
-import App.View exposing (view)
+import App.Model exposing (Model)
 import App.Router exposing (delta2url, hash2messages)
+import App.Update exposing (init, Msg(..), update, subscriptions)
+import App.View exposing (view)
+import RouteUrl exposing (RouteUrlProgram)
 
 
-main : Program Never
+main : RouteUrlProgram Never Model Msg
 main =
     RouteUrl.program
         { delta2url = delta2url

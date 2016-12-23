@@ -28,5 +28,5 @@ setActivePage =
 getPageAsAnonymous : Page -> Page
 getPageAsAnonymous page =
     update (SetActivePage page) emptyModel
-        |> fst
+        |> Tuple.first
         |> .activePage
